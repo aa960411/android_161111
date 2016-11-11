@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button b2;
     TextView b3;
     CheckBox b4;
+    RatingBar b5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"체크하셨습니다.",Toast.LENGTH_SHORT).show();
             }
         });
-
+        b5 = (RatingBar)findViewById(R.id.ratingBar);
+        b5.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                Toast.makeText(getApplicationContext(), "별점을 반영하겠습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

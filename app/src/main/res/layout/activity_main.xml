@@ -19,7 +19,7 @@
         android:id="@+id/textView" />
 
     <Button
-        android:text="인사"
+        android:text="yoyyo"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="21dp"
@@ -43,4 +43,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar" />
+
+    <CheckBox
+        android:text="check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
 </LinearLayout>
